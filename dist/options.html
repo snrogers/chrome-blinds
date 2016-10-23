@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chrome Blinds Options</title>
+    <link rel='shortcut icon' href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/googleIcons.css">
+    <link rel="stylesheet" href="css/materialize.css"/>
+    <link rel="stylesheet" href="css/options.css"/>
+</head>
+<body class="grey">
+    <nav class="top-nav blue lighten-2 top-nav valign-wrapper" style="height:10vh">
+        <div class=" valign center-block">
+            <h1 class="flow-text center-align no-padding no-margin">Chrome Blinds Options</h1>
+        </div>
+    </nav>
+
+    <div class="container z-depth-1">
+        <div class="col s12 grey lighten-3" style="height: 90vh">
+            <div class="spacer"></div>
+            <div class="col s12">
+                <label>Select Profile</label>
+                <div id="divSelectProfile">
+                    <div class="select-wrapper">
+                        <select id="selectProfile" class="browser-default">
+                            <option disabled selected>Loading Profiles....</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div id="divNewProfile" class="collapsible-custom" style="height: 0px">
+                <label>New Profile Name</label>
+                <input id="inputNewProfileName" type="text" class="white"/>
+                <button id="buttonCreateProfile" class="btn">Create New Profile</button>
+            </div>
+
+            <hr/>
+
+                <textarea id="textAreaProfile" rows="15" class="white" disabled>
+                    Loading Profiles...
+                </textarea>
+            <div class="row center-align">
+                <a id="buttonSaveProfile" class="btn"><i class="material-icons left">save</i>Save Profile</a>
+                <a id="buttonSetDefaultProfile" class="btn"><i class="material-icons left">star</i>Set as Default</a>
+                <a id="buttonDeleteProfile" class="btn"><i class="material-icons left">delete</i>Delete Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/q.js"></script>
+    <script src="js/blinds.js"></script>
+    <script src="js/options.js"></script>
+</body>
+</html>

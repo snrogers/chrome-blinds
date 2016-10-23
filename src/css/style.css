@@ -1,0 +1,21 @@
+
+
+textarea {
+    resize: none;
+    height: 300px;
+}
+
+.top-nav {
+    height: 122px;
+    box-shadow: none;
+}
+
+
+.no-margin {
+    margin: 0;
+}
+
+.collapsible-custom {
+    overflow: hidden;
+    transition: height 0.5s;
+}

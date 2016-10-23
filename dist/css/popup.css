@@ -1,0 +1,77 @@
+html{
+    width:200px;
+}
+
+body{
+}
+
+button{
+    width: 100%;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.titleBar {
+    margin-top: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/** Button Stuff **/
+.onoffswitch {
+    font-family: Tahoma;
+    position: relative; width: 200px;
+    -webkit-user-select:none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 1px solid #999999; border-radius: 0px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    /*transition: margin 0.3s ease-in 0s;*/
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 12px; color: white;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Current Site Allowed";
+    padding-left: 27px;
+    background-color: #EEEEEE; color: #000000;
+}
+.onoffswitch-inner:after {
+    content: "Current Site Restricted";
+    padding-right: 27px;
+    background-color: #EEEEEE; color: #000000;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 20px; margin: 5px;
+    background: #FA6973;
+    position: absolute; top: 0; bottom: 0;
+    right: 166px;
+    border: 2px solid #999999; border-radius: 0px;
+    /*transition: all 0.3s ease-in 0s;*/
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+    background-color: #10E04B;
+}
+
+.onoffswitch-checkbox:disabled + .onoffswitch-label .onoffswitch-inner:before,
+.onoffswitch-checkbox:disabled + .onoffswitch-label .onoffswitch-inner:after{
+    background-color: lightgray;
+    color: darkgray;
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <title>Chrome Blinds</title>
+    <link rel="stylesheet" href="css/materialize.css"/>
+    <link rel="stylesheet" href="css/popup.css"/>
+</head>
+<body>
+    <div class="titleBar blue lighten-2 text-white">
+        <h5 class="no-margin white-text">Chrome Blinds</h5>
+    </div>
+    <div class="grey lighten-3">
+        <span>
+            <label>Active Profile</label>
+            <select id="selectProfile" class="browser-default">
+            </select></span>
+    <!--<button id="blockDomain">Add this domain to the active profile</button>-->
+    <!--<button id="blockSubdomain">Add this subdomain to the active profile</button>-->
+    </div>
+
+    <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="toggleBlock" checked>
+        <label class="onoffswitch-label" for="toggleBlock">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/q.js"></script>
+    <script src="js/blinds.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>

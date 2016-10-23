@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "isolatedModules": false,
+    "declaration": false,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "noLib": false,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "sourceMap": true
+  },
+  "compileOnSave": false,
+  "filesGlob": [
+    "js/**/*{.ts, .d.ts}",
+    "../typings/main.d.ts"
+  ],
+  "files": [
+    "../typings/main.d.ts",
+    "js/background.ts",
+    "js/blinds.ts",
+    "js/content.ts",
+    "js/options.ts",
+    "js/popup.ts"
+  ]
+}
